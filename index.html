@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dustin Portfolio</title>
+</head>
+
+<body>
+
+    <!-- PARTICLE CANVAS -->
+    <canvas id="particles"></canvas>
+
+    <!-- CURSOR -->
+    <div class="cursor"></div>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">DK<span>.</span></a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#" onclick="closeMobileNav()">Home</a>
+        <a href="#services" onclick="closeMobileNav()">Services</a>
+        <a href="#skills" onclick="closeMobileNav()">Skills</a>
+        <a href="#education" onclick="closeMobileNav()">Education</a>
+        <a href="#experience" onclick="closeMobileNav()">Experience</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+
+        <div class="home-img reveal">
+            <div class="img-ring"></div>
+            <div class="img-ring ring-2"></div>
+            <img src="images/Dustin.jpg" alt="Dustin">
+            <div class="img-badge"><i class="fa-solid fa-code"></i></div>
+        </div>
+
+        <div class="home-content">
+            <div class="tag reveal-delay-1">👋 Welcome to my Portfolio</div>
+            <h1 class="reveal-delay-2">Hi, It's <span>Dustin</span></h1>
+            <h3 class="reveal-delay-3">I'm a <span class="typed-text"></span><span class="cursor-blink">|</span></h3>
+            <p class="reveal-delay-4">
+                I am Dustin Kenneth S. Gelotin — a passionate student, programmer,
+                digital artist, and aspiring software developer.
+                I enjoy creating websites, programming projects,
+                and digital artworks while continuously improving
+                my skills in technology and design.
+            </p>
+
+            <div class="social-icons reveal-delay-5">
+                <a href="https://www.youtube.com/@dustkennvid" target="_blank" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span class="tooltip">YouTube</span>
+                </a>
+                <a href="https://www.facebook.com/dust.gelo12/" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span class="tooltip">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/dustkenn_/" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span class="tooltip">Instagram</span>
+                </a>
+            </div>
+
+            <div class="btn-group reveal-delay-5">
+                <a href="#contact" class="btn">Contact Me <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#services" class="btn-outline">View Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section-box">
+        <div class="section-header">
+            <span class="section-label">What I Do</span>
+            <h2>Services</h2>
+        </div>
+        <div class="cards-grid">
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Web Development</h3>
+                <p>I create responsive and modern websites using HTML and CSS with clean, semantic code.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>Digital Art</h3>
+                <p>I create digital artworks, layouts, publication materials, and posters for any occasion.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+                <h3>Programming</h3>
+                <p>I develop beginner-friendly systems and projects using different programming languages.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section-box section-alt">
+        <div class="section-header">
+            <span class="section-label">What I Know</span>
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div><span>Digital Art & Graphic Design</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-brands fa-html5"></i></div><span>HTML & CSS Web Design</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-solid fa-c"></i></div><span>C++ Programming</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-brands fa-python"></i></div><span>Python Programming</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-brands fa-java"></i></div><span>Java Programming</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div><span>Creative Layout Designing</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div><span>Problem Solving</span></div>
+            <div class="skill-item scroll-reveal"><div class="skill-icon"><i class="fa-solid fa-pencil"></i></div><span>Editorial Cartooning</span></div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section-box">
+        <div class="section-header">
+            <span class="section-label">My Background</span>
+            <h2>Education</h2>
+        </div>
+        <div class="timeline">
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="edu-header">
+                        <img src="images/htccs.jpg" alt="HTCCS Logo" class="school-logo">
+                        <div>
+                            <span class="timeline-label">Junior High School &middot; 2022&ndash;2023</span>
+                            <h3>Holy Trinity College of Camarines Sur</h3>
+                            <p class="edu-sub">Don Domingo B. Fortuno Street, Santiago, Bato, Camarines Sur, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="honor-badge">
+                        <i class="fa-solid fa-medal"></i>
+                        <span>With High Honors</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="edu-header">
+                        <img src="images/htccs.jpg" alt="HTCCS Logo" class="school-logo">
+                        <div>
+                            <span class="timeline-label">Senior High School &middot; 2024&ndash;2025</span>
+                            <h3>STEM Strand &mdash; HTCCS</h3>
+                            <p class="edu-sub">Don Domingo B. Fortuno Street, Santiago, Bato, Camarines Sur, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="honor-badge honor-gold">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>With Highest Honors</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-dot active"></div>
+                <div class="timeline-content active">
+                    <div class="edu-header">
+                        <img src="images/cspc.jpg" alt="CSPC Logo" class="school-logo">
+                        <div>
+                            <span class="timeline-label">College &middot; Present</span>
+                            <h3>BS Computer Engineering &mdash; CSPC</h3>
+                            <p class="edu-sub">National Road in San Miguel, Nabua, Camarines Sur, Philippines</p>
+                        </div>
+                    </div>
+                    <p class="edu-desc">1st Year in Camarines Sur Polytechnic Colleges.</p>
+                    <div class="honor-badge honor-active">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>Currently Enrolled</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section-box section-alt">
+        <div class="section-header">
+            <span class="section-label">My Work</span>
+            <h2>Experience</h2>
+        </div>
+        <div class="cards-grid">
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+                <h3>Editorial Cartoonist</h3>
+                <p>Experienced in editorial cartooning and journalism competitions for several years.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <h3>Digital Artist</h3>
+                <p>Created posters, layouts, publication materials, and digital artworks for school projects and events.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="card scroll-reveal">
+                <div class="card-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Student Programmer</h3>
+                <p>Developed projects and systems using C++, Python, and Java.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-box">
+        <div class="section-header">
+            <span class="section-label">Get in Touch</span>
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-wrapper scroll-reveal">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:gelotindustin12@gmail.com">gelotindustin12@gmail.com</a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <span class="contact-label">Phone</span>
+                    <a href="tel:+639458629221">+63 945 862 9221</a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <span class="contact-label">Location</span>
+                    <p> San Rafael, Bato, Camarines Sur, Philippines</p>
+                </div>
+            </div>
+            <div class="contact-socials">
+                <a href="https://www.youtube.com/@dustkennvid" target="_blank"><i class="fa-brands fa-youtube"></i> YouTube</a>
+                <a href="https://www.facebook.com/dust.gelo12/" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.instagram.com/dustkenn_/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span>Dustin Kenneth S. Gelotin</span>. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // CUSTOM CURSOR
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    document.addEventListener('mousemove', e => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        setTimeout(() => {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        }, 80);
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+        el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
+        el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
+    });
+
+    // TYPING EFFECT
+    const words = ['Computer Engineer Student', 'Web Developer Student', 'Digital Artist', 'Video Editor'];
+    let wordIndex = 0, charIndex = 0, deleting = false;
+    const typedEl = document.querySelector('.typed-text');
+    function type() {
+        const word = words[wordIndex];
+        if (!deleting) {
+            typedEl.textContent = word.substring(0, charIndex + 1);
+            charIndex++;
+            if (charIndex === word.length) { deleting = true; setTimeout(type, 1800); return; }
+        } else {
+            typedEl.textContent = word.substring(0, charIndex - 1);
+            charIndex--;
+            if (charIndex === 0) { deleting = false; wordIndex = (wordIndex + 1) % words.length; }
+        }
+        setTimeout(type, deleting ? 60 : 100);
+    }
+    type();
+
+    // PARTICLES
+    const canvas = document.getElementById('particles');
+    const ctx = canvas.getContext('2d');
+    let pts = [];
+    function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+    for (let i = 0; i < 70; i++) {
+        pts.push({
+            x: Math.random() * canvas.width, y: Math.random() * canvas.height,
+            r: Math.random() * 1.5 + 0.3,
+            vx: (Math.random() - 0.5) * 0.35, vy: (Math.random() - 0.5) * 0.35,
+            alpha: Math.random() * 0.4 + 0.1
+        });
+    }
+    function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        pts.forEach(p => {
+            p.x += p.vx; p.y += p.vy;
+            if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
+            if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0,156,196,${p.alpha})`;
+            ctx.fill();
+        });
+        // Draw lines between close particles
+        for (let i = 0; i < pts.length; i++) {
+            for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y;
+                const dist = Math.sqrt(dx*dx + dy*dy);
+                if (dist < 120) {
+                    ctx.beginPath();
+                    ctx.moveTo(pts[i].x, pts[i].y);
+                    ctx.lineTo(pts[j].x, pts[j].y);
+                    ctx.strokeStyle = `rgba(0,156,196,${0.12 * (1 - dist/120)})`;
+                    ctx.lineWidth = 0.5;
+                    ctx.stroke();
+                }
+            }
+        }
+        requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    // SCROLL REVEAL
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+    // MOBILE NAV
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('open');
+        mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+    }
+
+    // ACTIVE NAV ON SCROLL
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        document.querySelectorAll('nav a').forEach(a => {
+            const href = a.getAttribute('href');
+            if (href === '#' && scrollY < 300) { a.classList.add('active'); return; }
+            if (href === '#') { a.classList.remove('active'); return; }
+            const target = document.querySelector(href);
+            if (!target) return;
+            const top = target.offsetTop - 200;
+            const bottom = top + target.offsetHeight;
+            if (scrollY >= top && scrollY < bottom) a.classList.add('active');
+            else a.classList.remove('active');
+        });
+    });
+    </script>
+</body>
+</html>
